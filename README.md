@@ -2,7 +2,7 @@
 
 <p align="left">
     <img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-orange?style=for-the-badge"/>
-    <img src="https://img.shields.io/github/license/GabrielSchiavo/password-manager?color=blue&style=for-the-badge"/>
+    <!-- <img src="https://img.shields.io/github/license/GabrielSchiavo/password-manager?color=blue&style=for-the-badge"/> -->
 </p>
 
 Gerenciador de senhas em Python3 com criptografia.
