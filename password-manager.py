@@ -58,7 +58,7 @@ while True:
       print('Senha Mestre inválida!')
       break
    
-   mode = input("Deseja adicionar uma nova senha, visualizar as existentes, sair ou trocar a Senha Mestre (digite: add(adicionar), view(visualizar), q(sair) ou change(altera SM))? ").lower()
+   mode = input("O que deseja fazer? \n Adicionar senha: digite ADD \n Visualizar senhas existentes: digite VIEW \n Alterar Senha Mestre: digite CHANGE \n Sair: digite Q \n\nDigite: ").lower()
    if mode == "q":
       break
    
