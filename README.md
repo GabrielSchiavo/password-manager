@@ -28,6 +28,7 @@ Agora para iniciar o projeto execute este comando em um terminal na pasta do pro
 
 * python password-manager.py
 
+##### OBS: Senha Mestre padrão = 12345
 
 ## :heavy_check_mark: Tecnologias utilizadas
 * `Python - 3.10.5`
