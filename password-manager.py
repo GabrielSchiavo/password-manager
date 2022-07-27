@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from cryptography.fernet import Fernet
 
 ## Descomente as linhas abaixo para gerar uma nova key
