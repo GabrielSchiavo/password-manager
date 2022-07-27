@@ -10,6 +10,7 @@ Gerenciador de senhas em Python3 com criptografia.
 ## :hammer: Funcionalidades do projeto
 - `Cadastro de senhas`: é possível cadastrar o nome da conta, nome de usuário e senha. Todas as senhas são salvas no arquivo "passwords.txt".
 - `Criptografia das senhas`: as senhas salvas no arquivo "passwords.txt" são todas criptografadas.
+- `Senha Mestre`: só poderá acessar as senhas quem possuir a Senha Mestre.
 
 ## :file_folder: Acesso ao projeto
 Você pode [acessar o código-fonte do projeto](https://github.com/GabrielSchiavo/password-manager) ou [baixá-lo](https://github.com/GabrielSchiavo/password-manager/archive/refs/heads/main.zip).
