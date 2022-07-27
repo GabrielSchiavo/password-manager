@@ -1,10 +1,11 @@
 from cryptography.fernet import Fernet
 
+## Descomente as linhas abaixo para gerar uma nova key
 # def write_key():
 #    key = Fernet.generate_key()
 #    with open("key.key", "wb") as key_file:
 #       key_file.write(key)
-#     
+    
 # write_key()
 
 def load_key():
@@ -13,28 +14,49 @@ def load_key():
    file.close()
    return key
 
-# master_password = input("Qual é a sua senha mestre? ")
-key = load_key() # + master_password.encode()
+
+key = load_key()
 fer = Fernet(key)
+
+
+def write_token():
+   typed_token = input("Digite uma nova Senha Mestre? ")
+   token = fer.encrypt(typed_token)
+   with open("token.key", "wb") as key_file:
+      key_file.write(token)
+
+def load_token():
+   file = open("token.key", "rb")
+   token = file.read()
+   file.close()
+   return token
+
 
 def view():
    with open('passwords.txt', 'r') as f:
       for line in f.readlines():
          data = line.rstrip()
-         user, passw = data.split("|")
-         print("Usuário:", user, "| Senha:", fer.decrypt(passw.encode()).decode())
+         account, user, passw = data.split("|")
+         print("Conta:",account, "| Usuário:", user, "| Senha:", fer.decrypt(passw.encode()).decode())
 
 
 def add():
-   name = input('Nome da Conta: ')
+   accountName = input('Nome da Conta: ')
+   userName = input('Nome de Usuário: ')
    password = input("Senha: ")
    
    with open('passwords.txt', 'a') as f:
-      f.write(name + "|" + fer.encrypt(password.encode()).decode() + "\n")
+      f.write(accountName + "|" + userName + "|" + fer.encrypt(password.encode()).decode() + "\n")
 
 
 while True:
-   mode = input("Deseja adicionar uma nova senha ou visualizar as existentes (digite: view ou add) ou presione q para sair? ").lower()
+   master_password = input("Qual é a sua Senha Mestre? ") ## gKs@8775612125654564
+   token = load_token()
+   if master_password != fer.decrypt(token).decode():
+      print('Senha Mestre inválida!')
+      break
+   
+   mode = input("Deseja adicionar uma nova senha, visualizar as existentes, sair ou trocar a Senha Mestre (digite: add(adicionar), view(visualizar), q(sair) ou change(altera SM))? ").lower()
    if mode == "q":
       break
    
@@ -42,7 +64,9 @@ while True:
       view()
    elif mode == "add":
       add()
+   elif mode == "change":
+      write_token()
    else:
-      print("Modo inválido.")
+      print("Modo inválido!")
       continue
      
