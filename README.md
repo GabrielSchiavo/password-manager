@@ -5,32 +5,28 @@
     <!-- <img src="https://img.shields.io/github/license/GabrielSchiavo/password-manager?color=blue&style=for-the-badge"/> -->
 </p>
 
-<!-- App de lista desenvolvido com React Native para fins de estudo.
+Gerenciador de senhas em Python3 com criptografia.
 
 ## :hammer: Funcionalidades do projeto
-- `Cadastro de tarefa`: cadastro de tarefas a serem feitas.
-- `Marcar tarefa como concluída`: possibilidade de marcar tarefas como concluídas. -->
+- `Cadastro de senhas`: é possível cadastrar o nome da conta, nome de usuário e senha. Todas as senhas são salvas no arquivo "passwords.txt".
+- `Criptografia das senhas`: as senhas salvas no arquivo "passwords.txt" são todas criptografadas.
 
 ## :file_folder: Acesso ao projeto
 Você pode [acessar o código-fonte do projeto](https://github.com/GabrielSchiavo/password-manager) ou [baixá-lo](https://github.com/GabrielSchiavo/password-manager/archive/refs/heads/main.zip).
 
-<!-- ## 	:hammer_and_wrench: Abrir e rodar o projeto
+## 	:hammer_and_wrench: Abrir e rodar o projeto
 Após baixar o projeto, você pode abrir com o Visual Studio Code. Para o projeto funcionar você deve ter configurado no seu PC:
 
-* Node.js - Versão >=16.14.2
+* Python - Versão >=3.10.5
 
-Agora, você deve executar em um terminal o seguinte comando para instalar o Expo:
+Agora, você deve executar em um terminal na pasta do projeto o seguinte comando para instalar a biblioteca Cryptography do Python:
 
-* npm install --global expo-cli
+* pip install cryptography
 
-Após executar esse comando abra outro terminal na pasta do projeto e execute este comando para instalar as dependências do projeto:
+Agora para iniciar o projeto execute este comando em um terminal na pasta do projeto:
 
-* npm install
+* python password-manager.py
 
-Agora basta iniciar o projeto com o seguinte comando:
-
-* expo start 
--->
 
 ## :heavy_check_mark: Tecnologias utilizadas
 * `Python - 3.10.5`
