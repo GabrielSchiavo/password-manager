@@ -3,13 +3,13 @@ from cryptography.fernet import Fernet
 ## Descomente as linhas abaixo para gerar uma nova key
 # def write_key():
 #    key = Fernet.generate_key()
-#    with open("key.key", "wb") as key_file:
+#    with open("./keys/key.key", "wb") as key_file:
 #       key_file.write(key)
     
 # write_key()
 
 def load_key():
-   file = open("key.key", "rb")
+   file = open("./keys/key.key", "rb")
    key = file.read()
    file.close()
    return key
@@ -23,12 +23,12 @@ fer = Fernet(key)
 def write_token():
    typed_token = input("Digite uma nova Senha Mestre? ").encode()
    token = fer.encrypt(typed_token)
-   with open("token.key", "wb") as key_file:
+   with open("./keys/token.key", "wb") as key_file:
       key_file.write(token)
 # write_token()
 
 def load_token():
-   file = open("token.key", "rb")
+   file = open("./keys/token.key", "rb")
    token = file.read()
    file.close()
    return token
