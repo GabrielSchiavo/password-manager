@@ -21,7 +21,7 @@ fer = Fernet(key)
 
 ## Descomentar a linha 28 para alterar a Senha Mestre
 def write_token():
-   typed_token = input("Digite uma nova Senha Mestre? ").encode()
+   typed_token = input("Digite uma nova Senha Mestre: ").encode()
    token = fer.encrypt(typed_token)
    with open("./keys/token.key", "wb") as key_file:
       key_file.write(token)
@@ -52,7 +52,7 @@ def add():
 
 
 while True:
-   master_password = input("Qual é a sua Senha Mestre? ") ## Senha Mestre: 12345
+   master_password = input("Digite sua Senha Mestre: ") ## Senha Mestre: 12345
    token = load_token()
    if master_password != fer.decrypt(token).decode():
       print('Senha Mestre inválida!')
