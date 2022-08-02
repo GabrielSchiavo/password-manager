@@ -30,7 +30,7 @@ Agora para iniciar o projeto execute este comando em um terminal na pasta do pro
 
 ##### OBS: Senha Mestre padrão = 12345
 
-## :heavy_check_mark: Tecnologias utilizadas
+## :white_check_mark: Tecnologias utilizadas
 * `Python - 3.10.5`
 * `Cryptography - 37.0.4`
 
