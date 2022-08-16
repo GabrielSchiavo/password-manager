@@ -31,8 +31,8 @@ Agora para iniciar o projeto execute este comando em um terminal na pasta do pro
 ##### OBS: Senha Mestre padrão = 12345
 
 ## :white_check_mark: Tecnologias utilizadas
-* `Python - 3.10.5`
 * `Cryptography - 37.0.4`
+* `Python - 3.10.5`
 
 ## :page_facing_up: Referências
 * `Tech With Tim:` [YouTube](https://www.youtube.com/watch?v=DLn3jOsNRVE&list=WL&index=3&t=4667s)
