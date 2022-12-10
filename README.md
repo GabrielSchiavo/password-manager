@@ -8,9 +8,9 @@
 Gerenciador de senhas em Python3 com criptografia.
 
 ## :hammer: Funcionalidades do projeto
-- `Cadastro de senhas`: é possível cadastrar o nome da conta, nome de usuário e senha. Todas as senhas são salvas no arquivo "passwords.txt".
-- `Criptografia das senhas`: as senhas salvas no arquivo "passwords.txt" são todas criptografadas.
-- `Senha Mestre`: só poderá acessar as senhas quem possuir a Senha Mestre.
+- `Cadastro de senhas:` é possível cadastrar o nome da conta, nome de usuário e senha. Todas as senhas são salvas no arquivo "passwords.txt".
+- `Criptografia das senhas:` as senhas salvas no arquivo "passwords.txt" são todas criptografadas.
+- `Senha Mestre:` só poderá acessar as senhas quem possuir a Senha Mestre.
 
 ## :file_folder: Acesso ao projeto
 Você pode [acessar o código-fonte do projeto](https://github.com/GabrielSchiavo/password-manager) ou [baixá-lo](https://github.com/GabrielSchiavo/password-manager/archive/refs/heads/main.zip).
@@ -21,12 +21,14 @@ Após baixar o projeto, você pode abrir com o Visual Studio Code. Para o projet
 * Python - Versão >=3.10.5
 
 Agora, você deve executar em um terminal na pasta do projeto o seguinte comando para instalar a biblioteca Cryptography do Python:
-
-* pip install cryptography
+```bash
+pip install cryptography
+```
 
 Agora para iniciar o projeto execute este comando em um terminal na pasta do projeto:
-
-* python password-manager.py
+```bash
+python password-manager.py
+```
 
 ##### OBS: Senha Mestre padrão = 12345
 
