@@ -30,7 +30,7 @@ Agora para iniciar o projeto execute este comando em um terminal na pasta do pro
 python password-manager.py
 ```
 
-##### OBS: Senha Mestre padrão = 12345
+<!-- ##### OBS: Senha Mestre padrão = 12345 -->
 
 ## :white_check_mark: Tecnologias utilizadas
 * `Cryptography - 37.0.4`
